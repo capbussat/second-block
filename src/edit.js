@@ -15,7 +15,10 @@ export default function Edit(props) {
 		'core/heading',
 		'wp-gb/inner-blocks'
 	];
+	console.log(props);
+	
 	return (
+	
 		<div { ...useBlockProps() }>
 				<InnerBlocks
 					allowedBlocks={ ALLOWED_BLOCKS }
