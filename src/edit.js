@@ -7,7 +7,7 @@ import { __ } from '@wordpress/i18n';
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 import './editor.scss';
 
-export default function Edit(props) {
+export default function Edit({attributes, setAttributes}) {
 	const ALLOWED_BLOCKS = [
 		'core/image',
 		'core/paragraph',
@@ -15,13 +15,21 @@ export default function Edit(props) {
 		'core/heading',
 		'wp-gb/inner-blocks'
 	];
-	console.log(props);
-	
+	const BLOCKS_TEMPLATE = [
+		[ 'core/image', {} ],
+		[ 'core/paragraph', { placeholder: 'Image Details' } ],
+	];
+
+	//console.log(attributes);
+	const blockProps = useBlockProps();
+
 	return (
 	
-		<div { ...useBlockProps() }>
+		<div { ...blockProps }>
 				<InnerBlocks
 					allowedBlocks={ ALLOWED_BLOCKS }
+					template = { BLOCKS_TEMPLATE }
+					templateLock={false}
 				/>
 		</div>
 	);

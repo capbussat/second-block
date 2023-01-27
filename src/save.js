@@ -15,11 +15,12 @@ import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save (props) {
-	console.log(props);
-	
+export default function save ({attributes}) {
+	console.log(attributes);
+	const blockProps = useBlockProps;
+
 	return (
-		<div { ...useBlockProps.save() }>
+		<div { ...blockProps.save() }>
 			<div>
 				<InnerBlocks.Content />
 			</div>

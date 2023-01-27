@@ -1,1 +1,0 @@
-{"version":3,"file":"script.js","mappings":";;;;;AAAA;AACA;AACA,mG","sources":["webpack://second-block/./src/script.js"],"sourcesContent":["/** script.js \r\n * Block type frontend and editor scripts definition. \r\n * They will be enqueued both in the editor and hen viewing the content on the front of the site.*/  "],"names":[],"sourceRoot":""}
