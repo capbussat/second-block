@@ -12,6 +12,7 @@
 	},
 	"textdomain": "second-block",
 	"editorScript": "file:./index.js",
+	"script": "file:./script.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"
 }
