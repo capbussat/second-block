@@ -6,7 +6,10 @@
 	"title": "Second Block",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Second Block with InnerBlocks support and a block template.",
+	"example": {
+
+	},
 	"supports": {
 		"align": [ "wide", "full" ],
 		"anchor": true,
@@ -22,9 +25,8 @@
 			"margin": true,
 			"padding": true
 		}
-	},
-	"textdomain": "second-block",
-	"editorScript": "file:./index.js",
+	}, 
+	"textdomain": "second-block", "editorScript": "file:./index.js",
 	"script": "file:./script.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"

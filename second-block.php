@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       Second Block
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       Second Block is a block using Inner Blocks with a block template 
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            capbussat
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       second-block

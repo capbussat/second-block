@@ -6,7 +6,8 @@
   "title": "Second Block",
   "category": "widgets",
   "icon": "smiley",
-  "description": "Example block scaffolded with Create Block tool.",
+  "description": "Second Block with InnerBlocks support and a block template.",
+  "example": {},
   "supports": {
     "align": [
       "wide",
