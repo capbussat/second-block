@@ -4,9 +4,9 @@
   "name": "create-block/second-block",
   "version": "0.1.0",
   "title": "Template Block",
-  "category": "widgets",
-  "icon": "smiley",
-  "description": "Second Block with InnerBlocks support and a block template.",
+  "category": "media",
+  "icon": "format-image",
+  "description": "Places a modifiable block template for an image and two paragraph below. Has two styles predefined.",
   "example": {},
   "styles": [
     {
@@ -16,7 +16,7 @@
     },
     {
       "name": "astonishing",
-      "label": "astonishing"
+      "label": "Astonishing"
     }
   ],
   "supports": {

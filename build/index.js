@@ -213,7 +213,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/second-block","version":"0.1.0","title":"Template Block","category":"widgets","icon":"smiley","description":"Second Block with InnerBlocks support and a block template.","example":{},"styles":[{"name":"default","label":"Default","isDefault":true},{"name":"astonishing","label":"astonishing"}],"supports":{"align":["wide","full"],"anchor":true,"color":{"gradients":true,"link":true,"__experimentalDefaultControls":{"background":true,"text":true}},"spacing":{"margin":true,"padding":true}},"textdomain":"second-block","editorScript":"file:./index.js","script":"file:./script.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/second-block","version":"0.1.0","title":"Template Block","category":"media","icon":"format-image","description":"Places a modifiable block template for an image and two paragraph below. Has two styles predefined.","example":{},"styles":[{"name":"default","label":"Default","isDefault":true},{"name":"astonishing","label":"Astonishing"}],"supports":{"align":["wide","full"],"anchor":true,"color":{"gradients":true,"link":true,"__experimentalDefaultControls":{"background":true,"text":true}},"spacing":{"margin":true,"padding":true}},"textdomain":"second-block","editorScript":"file:./index.js","script":"file:./script.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
