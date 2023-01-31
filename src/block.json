@@ -3,13 +3,24 @@
 	"apiVersion": 2,
 	"name": "create-block/second-block",
 	"version": "0.1.0",
-	"title": "Second Block",
+	"title": "Template Block",
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Second Block with InnerBlocks support and a block template.",
 	"example": {
 
 	},
+	"styles": [
+		{
+			"name": "default",
+			"label": "Default",
+			"isDefault": true
+		},
+		{
+			"name": "astonishing",
+			"label": "astonishing"
+		}
+	],
 	"supports": {
 		"align": [ "wide", "full" ],
 		"anchor": true,

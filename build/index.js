@@ -29,20 +29,14 @@ function Edit(_ref) {
     setAttributes
   } = _ref;
   const ALLOWED_BLOCKS = ['core/image', 'core/paragraph', 'core/columns', 'core/heading', 'wp-gb/inner-blocks'];
-  const BLOCKS_TEMPLATE = [['core/image', {
-    "backgroundColor": "tertiary",
-    "textColor": "contrast"
-  }], ['core/paragraph', {
-    "placeholder": 'Image Details',
-    "backgroundColor": "tertiary",
-    "textColor": "contrast"
-  }], ['core/paragraph', {
-    "placeholder": 'A footer',
-    "backgroundColor": "tertiary",
-    "textColor": "contrast"
-  }]];
 
-  //console.log(attributes);"
+  /* { "backgroundColor":"tertiary", "textColor":"contrast"} */
+  const BLOCKS_TEMPLATE = [['core/group', {}, [['core/image'], ['core/paragraph', {
+    "placeholder": 'Image Details'
+  }], ['core/paragraph', {
+    "placeholder": 'A footer'
+  }]] /* array at the end of core/group */] /* core/group */]; /* template */
+
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)();
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", blockProps, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
     allowedBlocks: ALLOWED_BLOCKS,
@@ -143,7 +137,6 @@ function save(_ref) {
   let {
     attributes
   } = _ref;
-  console.log(attributes);
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps;
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", blockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null)));
 }
@@ -220,7 +213,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/second-block","version":"0.1.0","title":"Second Block","category":"widgets","icon":"smiley","description":"Second Block with InnerBlocks support and a block template.","example":{},"supports":{"align":["wide","full"],"anchor":true,"color":{"gradients":true,"link":true,"__experimentalDefaultControls":{"background":true,"text":true}},"spacing":{"margin":true,"padding":true}},"textdomain":"second-block","editorScript":"file:./index.js","script":"file:./script.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/second-block","version":"0.1.0","title":"Template Block","category":"widgets","icon":"smiley","description":"Second Block with InnerBlocks support and a block template.","example":{},"styles":[{"name":"default","label":"Default","isDefault":true},{"name":"astonishing","label":"astonishing"}],"supports":{"align":["wide","full"],"anchor":true,"color":{"gradients":true,"link":true,"__experimentalDefaultControls":{"background":true,"text":true}},"spacing":{"margin":true,"padding":true}},"textdomain":"second-block","editorScript":"file:./index.js","script":"file:./script.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

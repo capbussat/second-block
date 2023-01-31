@@ -10,22 +10,26 @@ export default function Edit({attributes, setAttributes}) {
 		'core/heading',
 		'wp-gb/inner-blocks'
 	];
-	const BLOCKS_TEMPLATE = [
-		[ 'core/image'    , { "backgroundColor":"tertiary", "textColor":"contrast"} ],
-		[ 'core/paragraph', { "placeholder": 'Image Details', "backgroundColor":"tertiary","textColor":"contrast"} ],
-		[ 'core/paragraph', { "placeholder": 'A footer', "backgroundColor":"tertiary","textColor":"contrast" }],
-	];
 
-	//console.log(attributes);"
+	/* { "backgroundColor":"tertiary", "textColor":"contrast"} */
+	const BLOCKS_TEMPLATE = [ [ 'core/group', {}, 
+			[
+				[ 'core/image'    ,  ],
+				[ 'core/paragraph', { "placeholder": 'Image Details'}],
+				[ 'core/paragraph', { "placeholder": 'A footer',  }],
+			] /* array at the end of core/group */
+		] /* core/group */
+	 ]; /* template */
+
+
 	const blockProps = useBlockProps();
 
-	return (
-	
+	return (	
 		<div { ...blockProps }>
 				<InnerBlocks
 					allowedBlocks={ ALLOWED_BLOCKS }
 					template = { BLOCKS_TEMPLATE }
-					templateLock={false}
+					templateLock={false} 
 				/>
 		</div>
 	);

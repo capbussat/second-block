@@ -16,7 +16,7 @@ import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function save ({attributes}) {
-	console.log(attributes);
+	
 	const blockProps = useBlockProps;
 
 	return (
